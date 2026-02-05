@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            min-height: 700px;
+            background-color: rgb(255, 255, 255);
+        }
 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 1200px;
+            background: #fff;
+            margin: 50px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            background-color: #f1f1f1;
+            width: 100px;
+            height: 100px;
+        }
+
+        td:hover {
+            background-color: #ccc;
+        }
+
+        span {
+            text-decoration: underline;
+            color: #28638f;
+            cursor: pointer;
+        }
+
+        span:hover {
+            color: rgb(143, 64, 9);
+        }
+
+        .day {
+            background-color: rgb(153, 151, 151);
+            font-weight: bold;
+            color: white;
+        }
+
+        .highlight-blue {
+            background-color: #c0d1ff;
+        }
+
+        .img {
+            width: 1000px;
+            height: 500px;
+            margin: 50px;
+        }
+
+        .about-box {
+            border: 2px solid #000;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3 d-flex justify-content-between align-items-center">
+        <h1 class="about-box">About Me</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab">About Me</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab">Time Table</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="myplace-tab" data-bs-toggle="tab" data-bs-target="#myplace" type="button" role="tab">My Place</button>
+            </li>
+            <li class="nav-item dropdown" role="presentation">
+                <button class="nav-link dropdown-toggle" id="friends-tab" data-bs-toggle="dropdown" type="button" role="tab">My Friends</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">วัศพล ก๋อยสุวรรณ</a></li>
+                    <li><a class="dropdown-item" href="#">พัทธดนย์ บุญศรีทอง</a></li>
+                    <li><a class="dropdown-item" href="#">นรนาท จอกลอย</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="about" role="tabpanel">
+                <p>ชื่อ ธมนวรรณ นามสกุล พานสัมฤทธิ์<br>เกิดวันจันทร์ ที่ 4 กรกฏาคม พ.ศ.2548<br>ปัจจุบันอายุ 19 ปี
+                    <br>อาหารที่ชอบกิน : ก๋วยเตี๋ยว<br>ผลไม้ที่ชอบ : มะม่วงและชมพู่<br>สีที่ชอบ : สีดำและสีเขียว<br>กิจกรรมที่ชอบทำ : อ่านหนังสือ,ฟังเพลง,ดูหนัง
+                </p>
+            </div>
+            <div class="tab-pane fade" id="timetable" role="tabpanel">
+                <table>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>07:35<br>08:25</th>
+                        <th>08:30<br>09:20</th>
+                        <th>09:25<br>10:15</th>
+                        <th>10:20<br>11:10</th>
+                        <th>11:15<br>12:05</th>
+                        <th>--</th>
+                        <th>13:00<br>13:50</th>
+                        <th>13:55<br>14:45</th>
+                        <th>14:50<br>15:40</th>
+                        <th>15:45<br>16:35</th>
+                        <th>16:40<br>17:30</th>
+                        <th>17:35<br>18:25</th>
+                        <th>18:30<br>19:20</th>
+                        <th>19:25<br>20:15</th>
+                        <th>20:20<br>21:10</th>
+                    </tr>
+                    <tr>
+                        <td class="day">จันทร์</td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="3"> <span>SU203-162</span> <br>Sect:2030, เรียนออนไลน์</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>520112-165</span> <br>Sect:1, 1227/1 ว.1 วิทย์1</td>
+                        <td class="highlight-blue" colspan="3"> <span>SU401-162</span> <br>Sect:2054, ศษ4M06<br>โสมสวลี</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day">อังคาร</td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>SU202-162</span> <br>Sect:2085, เรียนออนไลน์</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>517122-165</span> <br>Sect:2 1227/1 ว.1 วิทย์1</td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>517122-165</span> <br>Sect:2 1227/1 ว.1 วิทย์1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day">พุธ</td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>517122-165</span> <br>Sect:2, ร.วท.2<br>รวมวิทย์</td>
+                        <td class="highlight-blue" colspan="2"> <span>517122-165</span> <br>Sect:2 1227/1 ว.1<br>วิทย์1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day">พฤหัสบดี</td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="2"> <span>SU202-162</span> <br>Sect:2085, เรียนออนไลน์</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="highlight-blue" colspan="3"> <span>520111-165</span> <br>Sect:1, ร.วท.1<br>รวมวิทย์</td>
+                        <td class="highlight-blue" colspan="3"> <span>SU102-162</span> <br>Sect:2510, ศษ3408<br>ศึกษา3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="day">ศุกร์</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="myplace" role="tabpanel">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
